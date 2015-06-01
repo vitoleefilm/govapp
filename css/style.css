@@ -1,10 +1,45 @@
+@import url(font/opensans.css);
+
 /* ---------------------------------------------- /*
  *  GENERAL STYLES
 /* ---------------------------------------------- */
-
-p, h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Open Sans', sans-serif;
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, iframe, fieldset, legend, label, button, input, textarea, th, td, figure {
+    margin: 0;
+    padding: 0
 }
+h1, h2, h3, h4, h5, strong, b, i {
+    font-weight: normal;
+    font-style: normal;
+}
+a, a:hover, a:active {
+    text-decoration: none !important;
+}
+ul, ol {
+    list-style: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+input, button, select, textarea {
+    outline: none
+}
+textarea {
+    resize: none
+}
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+body {
+    font: normal 12px/1.5 'Open Sans', '微软雅黑', sans-serif;
+}
+
 /* ---------------------------------------------- /*
  *  Home Section
 /* ---------------------------------------------- */
@@ -357,17 +392,23 @@ p, h1, h2, h3, h4, h5, h6, a {
 .content-title .pic {
     vertical-align: top;
 }
+.content-title .pic img {
+    display: block;
+    width: 93px;
+    height: 93px;
+}
 .content-title h2 {
     margin: 0;
     padding: 0;
     color: #000;
     font-size: 58px;
-    font-weight: bold;
+    font-weight: 800;
 }
 .content-title time {
     display: block;
     font-size: 24px;
     line-height: 48px;
+    font-weight: 600;
 }
 .cmsPage {
     max-width: 1024px;
@@ -383,7 +424,7 @@ p, h1, h2, h3, h4, h5, h6, a {
     font-size: 20px;
     line-height: 24px;
     color: #000;
-    font-weight: normal;
+    font-weight: 400;
 }
 .cmsMainBox img {
     display: block;
@@ -394,7 +435,7 @@ p, h1, h2, h3, h4, h5, h6, a {
 }
 .cmsMainBox a {
     color: #000;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: underline;
 }
 
