@@ -760,7 +760,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 .cmsMainBox .youku {
     display: block;
-    max-height: 0 auto;
+    margin: 0 auto !important;
 }
 
 /* ---------------------------------------------- /*
