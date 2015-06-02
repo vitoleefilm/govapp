@@ -187,7 +187,6 @@ header .main-menu li a {
     position: relative;
     padding: 0 15px;
     font-size: 22px;
-    line-height: 22px;
     color: #fff;
     line-height: 43px;
     border: 1px solid transparent;
@@ -834,22 +833,8 @@ footer p {
     header.fixed .main-menu li a:hover {
         border: none;
     }
-    header .main-menu li .share:after {
-        content: "";
-        display: inline-block;
-        position: relative;
-        width: 25px;
-        height: 22px;
-        top: 3px;
-        background-image: url(img/share.png);
-        background-size: 25px 22px;
-        -moz-transition: all .3s ease-out;
-        -webkit-transition: all .3s ease-out;
-        -ms-transition: all .3s ease-out;
-        transition: all .3s ease-out;
-    }
     header.fixed .main-menu li .share:after {
-        background-image: url(img/share-green.png);
+        background-image: url(img/share.png);
     }
 
 

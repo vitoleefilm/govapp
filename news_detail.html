@@ -145,6 +145,20 @@
             var ww = $(window).width();
             var wh = $(window).height();
 
+            if(ww>768) {
+              $("header .main-menu").css({
+                  height: 'auto'
+              });
+              $("header .main-menu li").css({
+                height: 'auto',
+                lineHeight: 0
+              });
+              $("header .main-menu li a").css({
+                height: 'auto',
+                lineHeight: 43 + 'px'
+              });
+            }
+
             if(ww<768) {
               $("header .main-menu").css({
                   height: wh
