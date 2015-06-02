@@ -49,8 +49,14 @@
                   </li>
                   <li><a data-scroll href="#contact">Contact</a>
                   </li>
-                  <li>
-                      <a href="javascript:;" class="share"></a>
+                  <li class="share">
+                      <a href="javascript:;"></a>
+                      <div class="bdsharebuttonbox">
+                        <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+                        <a href="#" class="bds_twi" data-cmd="twi" title="Share to Twitter"></a>
+                        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="Share to linkedin"></a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a>
+                    </div>
                   </li>
               </ul>
           </nav>
@@ -131,6 +137,7 @@
             © 2014 - Designed by Rémy Gendre - Fred&Farid - Mentions légales
           </p>
         </div>
+      </div>
     </footer>
 
 
@@ -145,29 +152,19 @@
             var ww = $(window).width();
             var wh = $(window).height();
 
-            if(ww>768) {
-              $("header .main-menu").css({
-                  height: 'auto'
-              });
-              $("header .main-menu li").css({
-                height: 'auto',
-                lineHeight: 0
-              });
-              $("header .main-menu li a").css({
-                height: 'auto',
-                lineHeight: 43 + 'px'
-              });
-            }
-
             if(ww<768) {
               $("header .main-menu").css({
                   height: wh
               });
-              $("header .main-menu li, header .main-menu li a").css({
+              $("header .main-menu li, header .main-menu li > a").css({
                 height: (wh-100)/7,
                 lineHeight: (wh-100)/7 + 'px'
               });
             }
+
+            $(".cmsMainBox .youku").css({
+              height: $(this).width()/16*9
+            });
         };
         setContentSize();
 

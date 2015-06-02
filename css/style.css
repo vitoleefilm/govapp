@@ -61,10 +61,10 @@ header {
 header.fixed {
     background: #fff;
     height: 83px;
-    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    /*-moz-box-shadow: 0 0 3px rgba(0,0,0,0.3);
     -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
     -ms-box-shadow: 0 0 3px rgba(0,0,0,0.3);
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);*/
 }
 header .inner {
     position: relative;
@@ -153,12 +153,13 @@ header.fixed .menu-button i:after {
 }
 header .main-menu {
     font-size: 0;
+    line-height: 0;
     text-align: right;
     z-index: 500;
-    -moz-transition: all .5s ease-out;
-    -webkit-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
 }
 header .main-menu.show {
     visibility: visible;
@@ -170,21 +171,31 @@ header .main-menu.show {
 header .main-menu .logo {
     display: none;
 }
+header .main-menu ul {
+    margin: 0;
+    padding: 0;
+}
 header .main-menu li {
     display: inline-block;
-    margin-left: 20px;
+    position: relative;
+    height: 103px;
+    margin: 0 0 0 20px;
     padding: 30px 0;
+    vertical-align: top;
     -moz-transition: all .3s ease-out;
     -webkit-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
 header.fixed .main-menu li {
+    height: 83px;
     padding: 20px 0;
+    vertical-align: top;
 }
-header .main-menu li a {
+header .main-menu li > a {
     display: inline-block;
     position: relative;
+    height: 45px;
     padding: 0 15px;
     font-size: 22px;
     color: #fff;
@@ -199,31 +210,108 @@ header .main-menu li a {
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
-header.fixed .main-menu li a {
-    color: #62e2b0;
+header.fixed .main-menu li > a {
+    color: #bfbfbf;
 }
-header .main-menu li a:hover {
+header .main-menu li > a:hover {
     border: 1px solid #fff;
 }
-header.fixed .main-menu li a:hover {
-    border: 1px solid #62e2b0;
+header.fixed .main-menu li > a:hover {
+    border: 1px solid #bfbfbf;
 }
-header .main-menu li .share:after {
+header .main-menu li.share > a {
+    width: 54px;
+    height: 45px;
+}
+header .main-menu li.share > a, header .main-menu li.share > a:hover {
+    border: none;
+}
+header .main-menu li.share > a:after {
     content: "";
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: absolute;
     width: 25px;
     height: 22px;
-    top: 3px;
+    top: 12px;
+    left: 13px;
     background-image: url(img/share.png);
-    background-size: 25px 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    z-index: 30;
+}
+header .main-menu li.share > a:hover:after {
+    background-image: url(img/share-green.png);
+}
+header .main-menu li.share > a:hover {
+    background: #fff;
+}
+header.fixed .main-menu li.share > a:hover {
+    background: #6f6f6f;
+}
+header.fixed .main-menu li.share > a:after {
+    background-image: url(img/share-grey.png);
+}
+header.fixed .main-menu li.share > a:hover:after {
+    background-image: url(img/share.png);
+}
+header .main-menu li.share .bdsharebuttonbox {
+    display: block;
+    position: absolute;
+    width: 54px;
+    left: 0;
+    top: 84px;
+    opacity: 0;
     -moz-transition: all .3s ease-out;
     -webkit-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
-header.fixed .main-menu li .share:after {
-    background-image: url(img/share-green.png);
+header .main-menu li.share:hover .bdsharebuttonbox {
+    opacity: 1;
+}
+header .main-menu li.share .bdsharebuttonbox a {
+    display: block;
+    float: none;
+    margin: 0 auto 20px auto;
+    padding: 0;
+    background-size: cover;
+    background-position: 0 0;
+}
+header .main-menu li.share .bdsharebuttonbox a.bds_fbook {
+    width: 14px;
+    height: 28px;
+    background-image: url(img/facebook-green.png);
+}
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_fbook {
+    background-image: url(img/facebook-grey.png);
+}
+header .main-menu li.share .bdsharebuttonbox a.bds_twi {
+    width: 25px;
+    height: 21px;
+    background-image: url(img/twitter-green.png);
+}
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_twi {
+    background-image: url(img/twitter-grey.png);
+}
+header .main-menu li.share .bdsharebuttonbox a.bds_linkedin {
+    width: 26px;
+    height: 25px;
+    background-image: url(img/linkedin-green.png);
+}
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_linkedin {
+    background-image: url(img/linkedin-grey.png);
+}
+header .main-menu li.share .bdsharebuttonbox a.bds_tsina {
+    width: 42px;
+    height: 35px;
+    background-image: url(img/weibo-green.png);
+}
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_tsina {
+    background-image: url(img/weibo-grey.png);
 }
 .header-mask {
     position: fixed;
@@ -660,15 +748,19 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 .cmsMainBox img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 .cmsMainBox a {
     color: #000;
     font-weight: 600;
     text-decoration: underline;
+}
+.cmsMainBox .youku {
+    display: block;
+    width: 100%;
 }
 
 /* ---------------------------------------------- /*
@@ -725,11 +817,11 @@ footer p {
     header .main-menu li {
         margin-left: 15px;
     }
-    header .main-menu li a {
+    header .main-menu li > a {
         padding: 0 10px;
         font-size: 18px;
     }
-    header .main-menu li .share:after {
+    header .main-menu li.share > a:after {
         content: "";
         display: inline-block;
         position: relative;
@@ -737,7 +829,6 @@ footer p {
         height: 18px;
         top: 3px;
         background-image: url(img/share.png);
-        background-size: 20px 18px;
         -moz-transition: all .3s ease-out;
         -webkit-transition: all .3s ease-out;
         -ms-transition: all .3s ease-out;
@@ -814,7 +905,7 @@ footer p {
     header.fixed .main-menu li {
         padding: 0;
     }
-    header .main-menu li a {
+    header .main-menu li > a {
         display: block;
         padding: 0;
         font-size: 22px;
@@ -824,17 +915,28 @@ footer p {
         -ms-border-radius: none;
         border-radius: none;
     }
-    header.fixed .main-menu li a {
+    header.fixed .main-menu li > a {
         color: #fff;
     }
-    header .main-menu li a:hover {
+    header .main-menu li > a:hover {
         border: none;
     }
-    header.fixed .main-menu li a:hover {
+    header.fixed .main-menu li > a:hover {
         border: none;
     }
-    header.fixed .main-menu li .share:after {
+    header .main-menu li.share > a {
+        width: 100%;
+    }
+    header .main-menu li.share > a:after {
+        position: static;
+        width: 25px;
+        height: 22px;
+    }
+    header.fixed .main-menu li.share > a:after {
         background-image: url(img/share.png);
+    }
+    header .main-menu li.share .bdsharebuttonbox {
+        display: none;
     }
 
 
@@ -851,7 +953,25 @@ footer p {
 
 
 @media (min-width: 768px) {
-    header .share-box {
+    header .share-box, 
+    .header-mask {
         display: none !important;
+    }
+    header .main-menu {
+        height: 103px !important;
+    }
+    header.fixed .main-menu {
+        height: 83px !important;
+    }
+    header .main-menu li {
+        height: 103px !important;
+        line-height: 0 !important;
+    }
+    header.fixed .main-menu li {
+        height: 83px !important;
+    }
+    header .main-menu li > a {
+        height: 45px !important;
+        line-height: 43px !important;
     }
 }
