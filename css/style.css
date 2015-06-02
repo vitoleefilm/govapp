@@ -1004,3 +1004,10 @@ footer p {
         line-height: 43px !important;
     }
 }
+
+@media (max-height: 380px) {
+	header .main-menu ul {
+    	overflow-y: scroll;
+    	-webkit-overflow-scrolling: touch;
+    }
+}

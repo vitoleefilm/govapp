@@ -153,6 +153,16 @@
               });
             }
 
+            if(wh<380) {
+              $("header .main-menu ul").css({
+                height: wh-100
+              });
+              $("header .main-menu li, header .main-menu li > a").css({
+                height: 40,
+                lineHeight: 40 + 'px'
+              });
+            }
+
             // $(".cmsMainBox .youku").css({
             //   height: $(this).width()/16*9
             // });
