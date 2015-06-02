@@ -944,6 +944,8 @@ footer p {
     .content {
         padding: 105px 12px 120px 12px;
     }
+    .content-title h2 {
+	    font-size: 38px;
 }
 /* Small devices (Mobile, 480px and up) */
 
