@@ -61,10 +61,10 @@ header {
 header.fixed {
     background: #fff;
     height: 83px;
-    /*-moz-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.3);
     -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
     -ms-box-shadow: 0 0 3px rgba(0,0,0,0.3);
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);*/
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
 header .inner {
     position: relative;
@@ -243,19 +243,19 @@ header .main-menu li.share > a:after {
     transition: all .3s ease-out;
     z-index: 30;
 }
-header .main-menu li.share > a:hover:after {
+header .main-menu li.share:hover > a:after {
     background-image: url(img/share-green.png);
 }
-header .main-menu li.share > a:hover {
+header .main-menu li.share:hover > a {
     background: #fff;
 }
-header.fixed .main-menu li.share > a:hover {
+header.fixed .main-menu li.share:hover > a {
     background: #6f6f6f;
 }
 header.fixed .main-menu li.share > a:after {
     background-image: url(img/share-grey.png);
 }
-header.fixed .main-menu li.share > a:hover:after {
+header.fixed .main-menu li.share:hover > a:after {
     background-image: url(img/share.png);
 }
 header .main-menu li.share .bdsharebuttonbox {
@@ -270,6 +270,9 @@ header .main-menu li.share .bdsharebuttonbox {
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
+header.fixed .main-menu li.share .bdsharebuttonbox {
+	top: 73px;
+}
 header .main-menu li.share:hover .bdsharebuttonbox {
     opacity: 1;
 }
@@ -280,37 +283,49 @@ header .main-menu li.share .bdsharebuttonbox a {
     padding: 0;
     background-size: cover;
     background-position: 0 0;
+    -moz-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
-header .main-menu li.share .bdsharebuttonbox a.bds_fbook {
-    width: 14px;
-    height: 28px;
+header .main-menu li.share .bdsharebuttonbox a.bds_fbook,
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_fbook:hover {
+    width: 12px;
+    height: 25px;
     background-image: url(img/facebook-green.png);
 }
+header .main-menu li.share .bdsharebuttonbox a.bds_fbook:hover,
 header.fixed .main-menu li.share .bdsharebuttonbox a.bds_fbook {
     background-image: url(img/facebook-grey.png);
 }
-header .main-menu li.share .bdsharebuttonbox a.bds_twi {
+header .main-menu li.share .bdsharebuttonbox a.bds_twi, 
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_twi:hover {
     width: 25px;
     height: 21px;
     background-image: url(img/twitter-green.png);
 }
-header.fixed .main-menu li.share .bdsharebuttonbox a.bds_twi {
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_twi,
+header .main-menu li.share .bdsharebuttonbox a.bds_twi:hover {
     background-image: url(img/twitter-grey.png);
 }
-header .main-menu li.share .bdsharebuttonbox a.bds_linkedin {
-    width: 26px;
-    height: 25px;
+header .main-menu li.share .bdsharebuttonbox a.bds_linkedin, 
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_linkedin:hover {
+    width: 20px;
+    height: 20px;
     background-image: url(img/linkedin-green.png);
 }
-header.fixed .main-menu li.share .bdsharebuttonbox a.bds_linkedin {
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_linkedin, 
+header .main-menu li.share .bdsharebuttonbox a.bds_linkedin:hover {
     background-image: url(img/linkedin-grey.png);
 }
-header .main-menu li.share .bdsharebuttonbox a.bds_tsina {
-    width: 42px;
-    height: 35px;
+header .main-menu li.share .bdsharebuttonbox a.bds_tsina, 
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_tsina:hover {
+    width: 28px;
+    height: 22px;
     background-image: url(img/weibo-green.png);
 }
-header.fixed .main-menu li.share .bdsharebuttonbox a.bds_tsina {
+header.fixed .main-menu li.share .bdsharebuttonbox a.bds_tsina, 
+header .main-menu li.share .bdsharebuttonbox a.bds_tsina:hover {
     background-image: url(img/weibo-grey.png);
 }
 .header-mask {
@@ -937,6 +952,14 @@ footer p {
     }
     header .main-menu li.share .bdsharebuttonbox {
         display: none;
+    }
+
+    /*footer*/
+    footer .container-fluid {
+    	padding: 0 20px;
+    }
+    footer p {
+    	font-size: 10px;
     }
 
 
