@@ -942,10 +942,14 @@ footer p {
 
     /*content*/
     .content {
-        padding: 105px 12px 120px 12px;
+        padding: 105px 12px 60px 12px;
     }
     .content-title h2 {
-	    font-size: 38px;
+	    font-size: 29px;
+	}
+	.content-title time {
+		font-size: 20px;
+	}
 }
 /* Small devices (Mobile, 480px and up) */
 
