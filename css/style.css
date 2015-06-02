@@ -724,6 +724,10 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     max-width: 1024px;
     margin: 0 auto 40px auto;
 }
+.content-title div {
+	margin: 0;
+	padding: 0;
+}
 .content-title .pic {
     vertical-align: top;
 }
