@@ -985,7 +985,7 @@ footer p {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     header .share-box, 
     .header-mask {
         display: none !important;
