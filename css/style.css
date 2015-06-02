@@ -750,7 +750,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 24px 0;
+    margin: 0 auto 24px auto;
     padding: 0;
 }
 .cmsMainBox a {
@@ -760,7 +760,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 .cmsMainBox .youku {
     display: block;
-    margin: 0 auto 24px 0 !important;
+    margin: 0 auto 24px auto !important;
 }
 
 /* ---------------------------------------------- /*
