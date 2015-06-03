@@ -164,9 +164,6 @@
                 });
             }
 
-            // $(".cmsMainBox .youku").css({
-            //   height: $(this).width()/16*9
-            // });
         };
         setContentSize();
 
@@ -176,14 +173,11 @@
 
         //顶部菜单
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 103) {
-                if (!$('header').hasClass('fixed')) {
-                    $('header').addClass('fixed');
-                }
-            } else {
-                if ($('header').hasClass('fixed')) {
-                    $('header').removeClass('fixed');
-                }
+            if ($(document).scrollTop() > 10) {
+                $('header').addClass('fixed');
+            } 
+            else {
+                $('header').removeClass('fixed');
             }
         });
 
