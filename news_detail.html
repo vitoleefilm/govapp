@@ -30,49 +30,50 @@
 <body>
     <header>
         <div class="inner">
-          <h1>
+            <h1>
             <a href="index.html">
               <img src="css/img/logo.png" alt="">
             </a>
           </h1>
-          <button class="menu-button"><i></i></button>
-          <nav class="main-menu">
-              <img class="logo" src="css/img/logo.png" alt="">
-              <ul>
-                  <li><a href="#home">Home</a>
-                  </li>
-                  <li><a data-scroll href="#concept">Concept</a>
-                  </li>
-                  <li><a data-scroll href="#Supports">Supports</a>
-                  </li>
-                  <li><a data-scroll href="#download">Download</a>
-                  </li>
-                  <li><a data-scroll href="#contact">Contact</a>
-                  </li>
-                  <li class="share">
-                      <a href="javascript:;"></a>
-                      <div class="bdsharebuttonbox">
+            <button class="menu-button"><i></i>
+            </button>
+            <nav class="main-menu">
+                <img class="logo" src="css/img/logo.png" alt="">
+                <ul>
+                    <li><a href="#home">Home</a>
+                    </li>
+                    <li><a data-scroll href="#concept">Concept</a>
+                    </li>
+                    <li><a data-scroll href="#Supports">Supports</a>
+                    </li>
+                    <li><a data-scroll href="#download">Download</a>
+                    </li>
+                    <li><a data-scroll href="#contact">Contact</a>
+                    </li>
+                    <li class="share">
+                        <a href="javascript:;"></a>
+                        <div class="bdsharebuttonbox">
+                            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+                            <a href="#" class="bds_twi" data-cmd="twi" title="Share to Twitter"></a>
+                            <a href="#" class="bds_linkedin" data-cmd="linkedin" title="Share to linkedin"></a>
+                            <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="share-box">
+                <button class="close"></button>
+                <div class="inner">
+                    <h4>SHARE</h4>
+                    <div class="bdsharebuttonbox">
                         <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
                         <a href="#" class="bds_twi" data-cmd="twi" title="Share to Twitter"></a>
                         <a href="#" class="bds_linkedin" data-cmd="linkedin" title="Share to linkedin"></a>
                         <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a>
                     </div>
-                  </li>
-              </ul>
-          </nav>
-          <div class="share-box">
-              <button class="close"></button>
-              <div class="inner">
-                <h4>SHARE</h4>
-                <div class="bdsharebuttonbox">
-                    <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
-                    <a href="#" class="bds_twi" data-cmd="twi" title="Share to Twitter"></a>
-                    <a href="#" class="bds_linkedin" data-cmd="linkedin" title="Share to linkedin"></a>
-                    <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a>
                 </div>
-              </div>
-          </div>
-          <div class="header-mask"></div>
+            </div>
+            <div class="header-mask"></div>
         </div>
     </header>
 
@@ -110,25 +111,25 @@
     </section>
 
     <footer>
-      <div class="container-fluid ">
-        <div class="row">
-          <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
-            <img src="css/img/facebook.png" alt="">
-          </a>
-          <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
-            <img src="css/img/twitter.png" alt="">
-          </a>
-          <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
-            <img src="css/img/linkedin.png" alt="">
-          </a>
-          <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
-            <img src="css/img/instagram.png" alt="">
-          </a>
-          <p class="col-md-12 col-sm-12 col-xs-12">
-            © 2014 - Designed by Rémy Gendre - Fred&Farid - Mentions légales
-          </p>
+        <div class="container-fluid ">
+            <div class="row">
+                <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
+                    <img src="css/img/facebook.png" alt="">
+                </a>
+                <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
+                    <img src="css/img/twitter.png" alt="">
+                </a>
+                <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
+                    <img src="css/img/linkedin.png" alt="">
+                </a>
+                <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
+                    <img src="css/img/instagram.png" alt="">
+                </a>
+                <p class="col-md-12 col-sm-12 col-xs-12">
+                    © 2014 - Designed by Rémy Gendre - Fred&Farid - Mentions légales
+                </p>
+            </div>
         </div>
-      </div>
     </footer>
 
 
@@ -137,30 +138,30 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      $(document).ready(function() {
+    $(document).ready(function() {
 
-          function setContentSize() {
+        function setContentSize() {
             var ww = $(window).width();
             var wh = $(window).height();
 
-            if(ww<769) {
-              $("header .main-menu").css({
-                  height: wh
-              });
-              $("header .main-menu li, header .main-menu li > a").css({
-                height: (wh-100)/7,
-                lineHeight: (wh-100)/7 + 'px'
-              });
+            if (ww < 769) {
+                $("header .main-menu").css({
+                    height: wh
+                });
+                $("header .main-menu li, header .main-menu li > a").css({
+                    height: (wh - 100) / 7,
+                    lineHeight: (wh - 100) / 7 + 'px'
+                });
             }
 
-            if(wh<380) {
-              $("header .main-menu ul").css({
-                height: wh-100
-              });
-              $("header .main-menu li, header .main-menu li > a").css({
-                height: 40,
-                lineHeight: 40 + 'px'
-              });
+            if (wh < 380) {
+                $("header .main-menu ul").css({
+                    height: wh - 100
+                });
+                $("header .main-menu li, header .main-menu li > a").css({
+                    height: 40,
+                    lineHeight: 40 + 'px'
+                });
             }
 
             // $(".cmsMainBox .youku").css({
@@ -169,44 +170,43 @@
         };
         setContentSize();
 
-        $(window).resize(function(){
+        $(window).resize(function() {
             setContentSize();
         }).resize();
 
-          //顶部菜单
-          $(window).scroll(function() {
-              if($(document).scrollTop()>103){
-                  if(!$('header').hasClass('fixed')){
-                      $('header').addClass('fixed');
-                  }
-              }
-              else{
-                  if($('header').hasClass('fixed')){
-                      $('header').removeClass('fixed');
-                  }
-              }
-          });
+        //顶部菜单
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 103) {
+                if (!$('header').hasClass('fixed')) {
+                    $('header').addClass('fixed');
+                }
+            } else {
+                if ($('header').hasClass('fixed')) {
+                    $('header').removeClass('fixed');
+                }
+            }
+        });
 
-          $(".menu-button").click(function(){
-              $(".main-menu").addClass("show");
-              $(".header-mask").addClass("show");
-          });
+        $(".menu-button").click(function() {
+            $(".main-menu").addClass("show");
+            $(".header-mask").addClass("show");
+        });
 
-          $(".header-mask").click(function(){
-              $(this).removeClass("show");
-              $(".main-menu").removeClass("show");
-          });
+        $(".header-mask").click(function() {
+            $(this).removeClass("show");
+            $(".main-menu").removeClass("show");
+        });
 
-          $(".main-menu .share").click(function(){
+        $(".main-menu .share").click(function() {
             $(".share-box").addClass("show");
-          });
-          $(".share-box .close").click(function(){
+        });
+        $(".share-box .close").click(function() {
             $(".share-box").removeClass("show");
-          });
+        });
 
 
-          //百度分享
-          window._bd_share_config = {
+        //百度分享
+        window._bd_share_config = {
             "common": {
                 "bdSnsKey": {},
                 "bdText": "",
@@ -219,7 +219,7 @@
             "share": {}
         };
         with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
-          });
+    });
     </script>
 </body>
 
