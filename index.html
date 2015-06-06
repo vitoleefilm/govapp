@@ -76,23 +76,25 @@
     
     <div class="content">
         <section id="home">
-            <div class="inner">
-                <div class="description">
-                    <h2>
-                        GOV App<br>
-                        La Météo de l’Opinion
-                    </h2>
-                    <p>
-                        Les instituts de sondages ne vous appellent jamais;<br>
-                        Vous n’avez pas le temps d’aller manifester tous les jours;<br>
-                        On ne vous demande votre avis qu’une fois tous les cinq ans;<br><br>
-                        <strong>ET POURTANT VOUS AVEZ DES CHOSES À DIRE !</strong><br><br>
-                        Avec GOV faites entendre votre voix.
-                    </p>
-                    <a target="_blank" href="javascript:;">TÉLÉCHARGER</a>
-                    <a class="disabled" target="_blank" href="javascript:;">En savoir Plus</a>
+            <div class="innerWrap">
+                <div class="inner">
+                    <div class="description">
+                        <h2>
+                            GOV App<br>
+                            La Météo de l’Opinion
+                        </h2>
+                        <p>
+                            Les instituts de sondages ne vous appellent jamais;<br>
+                            Vous n’avez pas le temps d’aller manifester tous les jours;<br>
+                            On ne vous demande votre avis qu’une fois tous les cinq ans;<br><br>
+                            <strong>ET POURTANT VOUS AVEZ DES CHOSES À DIRE !</strong><br><br>
+                            Avec GOV faites entendre votre voix.
+                        </p>
+                        <a target="_blank" href="javascript:;">TÉLÉCHARGER</a>
+                        <a class="disabled" target="_blank" href="javascript:;">En savoir Plus</a>
+                    </div>
+                    <img class="phone-1" src="css/img/phone-1.png" alt="">
                 </div>
-                <img class="phone-1" src="css/img/phone-1.png" alt="">
             </div>
         </section>
 
@@ -172,7 +174,8 @@
 
         <section class="fullVideo">
             <video width="100%" height="100%" class="video-js vjs-default-skin" controls preload="none" poster="css/img/background-green.jpg" data-setup="{}">
-                <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                <source src="http://content4.catalog.video.msn.com/e2/ds/6c61f3c3-28dc-4070-b64f-12a99bbed488.mp4" type='video/mp4' />
+
             </video>
             <button class="close"><i></i>
             </button>
@@ -227,15 +230,17 @@
         </section>
 
         <section id="download" class="chapter">
-            <h3>Télécharger GOV</h3>
-            <p>
-                <a target="_blank" href="javascript:;">
-                    <img src="css/img/apple-store.png" alt="">
-                </a>
-                <a target="_blank" href="javascript:;">
-                    <img src="css/img/google-play.png" alt="">
-                </a>
-            </p>
+            <div class="innerWrap">
+                <h3>Télécharger GOV</h3>
+                <p>
+                    <a target="_blank" href="javascript:;">
+                        <img src="css/img/apple-store.png" alt="">
+                    </a>
+                    <a target="_blank" href="javascript:;">
+                        <img src="css/img/google-play.png" alt="">
+                    </a>
+                </p>
+            </div>
         </section>
 
         <section id="contact" class="chapter">
@@ -302,6 +307,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.transit.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <!-- Smooth Scroll Build Status -->
@@ -339,6 +345,16 @@
             $(".fullVideo, .fullVideo .video-js, .fullVideo .vjs-tech").css({
                 width: ww,
                 height: ww*9/16
+            });
+
+            $("#home .innerWrap").css({
+                width: $("#home").width(),
+                height: $("#home").height()
+            });
+            $("#download .innerWrap").css({
+                width: $("#download").width(),
+                height: $("#download").height(),
+                top: $("header").height()-20
             });
 
         };
@@ -418,6 +434,10 @@
         $('#home').addClass('show');
 
         $('#concept').xInView(function() {
+            $("#home").addClass("fixed");
+        },$("#home").height()+60);
+
+        $('#concept').xInView(function() {
             $(this).addClass("show");
         },$(window).height()/3);
 
@@ -440,6 +460,12 @@
         $('#download').xInView(function() {
             $(this).addClass("show");
         },$(window).height()/3);
+
+        $('#download').xInView(function() {
+            $("#download").addClass("fixed");
+        },$("header").height());
+
+        
 
 
         //百度分享
