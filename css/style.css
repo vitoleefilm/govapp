@@ -434,7 +434,7 @@ header .share-box .bdsharebuttonbox a {
     display: inline-block;
     position: relative;
     float: none;
-    width: 50%;
+    width: 33.333333333%;
     height: 50px;
     margin: 0 0 50px 0;
     padding: 0;
@@ -493,7 +493,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     margin: 0;
     padding: 0;
     color: #000;
-    font-size: 58px;
+    font-size: 45px;
     font-weight: 800;
 }
 .content-title time {
@@ -513,9 +513,9 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 .cmsMainBox p {
     margin: 0 0 24px 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
-    color: #000;
+    color: #707070;
     font-weight: 400;
 }
 .cmsMainBox img {
@@ -526,7 +526,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     padding: 0;
 }
 .cmsMainBox a {
-    color: #000;
+    color: #707070;
     font-weight: 600;
     text-decoration: underline;
 }

@@ -53,7 +53,7 @@
                             <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
                             <a href="#" class="bds_twi" data-cmd="twi" title="Share to Twitter"></a>
                             <a href="#" class="bds_linkedin" data-cmd="linkedin" title="Share to linkedin"></a>
-                            <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a>
+                            <!-- <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a> -->
                         </div>
                     </li>
                 </ul>
@@ -66,7 +66,7 @@
                         <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
                         <a href="#" class="bds_twi" data-cmd="twi" title="Share to Twitter"></a>
                         <a href="#" class="bds_linkedin" data-cmd="linkedin" title="Share to linkedin"></a>
-                        <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a>
+                        <!-- <a href="#" class="bds_tsina" data-cmd="tsina" title="Share to Weibo"></a> -->
                     </div>
                 </div>
             </div>
@@ -441,6 +441,8 @@
 
         $('#concept').xInView(function() {
             $("#home").addClass("fixed");
+        },function() {
+            $("#home").removeClass("fixed");
         },$("#home").height()+60);
 
         $('#concept').xInView(function() {
