@@ -403,7 +403,10 @@
         });
 
         //scroll
-        $.fn.xInView = function(callback,offset){
+       $.fn.xInView = function(callback,callback1,offset){
+            if (typeof(callback1) == 'number') {
+                offset = callback1;
+            }
             offset = offset || 0;
             var _this = $(this);
             function getScrollpoint(){
@@ -419,10 +422,13 @@
             
             function loadElemenet(){
                 var index = getScrollpoint();
-                if(index == 1){
-                    var ele = $(_this).get(index-1);
+                var ele = $(_this).get(index-1);
+                if (index == 1) {
                     callback && callback.call(ele);
-                };
+                } else if (typeof(callback1) == 'function') {
+                    callback1 && callback1.call(ele);
+                }
+                
             };
             $(window).bind("scroll.xInView", function () {
                 loadElemenet();
@@ -463,6 +469,8 @@
 
         $('#download').xInView(function() {
             $("#download").addClass("fixed");
+        },function() {
+            $("#download").removeClass("fixed");
         },$("header").height());
 
         
