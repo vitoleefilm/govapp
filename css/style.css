@@ -197,10 +197,12 @@ header .main-menu li > a {
     position: relative;
     height: 45px;
     padding: 0 15px;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 600;
     color: #fff;
     line-height: 43px;
     border: 1px solid transparent;
+    text-transform: uppercase;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -294,6 +296,11 @@ header.fixed .main-menu li.share .bdsharebuttonbox a.bds_fbook:hover {
     height: 25px;
     background-image: url(img/facebook-green.png);
 }
+.index header .main-menu li.share .bdsharebuttonbox a.bds_fbook {
+    width: 12px;
+    height: 25px;
+    background-image: url(img/facebook-white.png);
+}
 header .main-menu li.share .bdsharebuttonbox a.bds_fbook:hover,
 header.fixed .main-menu li.share .bdsharebuttonbox a.bds_fbook {
     background-image: url(img/facebook-grey.png);
@@ -304,6 +311,11 @@ header.fixed .main-menu li.share .bdsharebuttonbox a.bds_twi:hover {
     height: 21px;
     background-image: url(img/twitter-green.png);
 }
+.index header .main-menu li.share .bdsharebuttonbox a.bds_twi {
+    width: 25px;
+    height: 21px;
+    background-image: url(img/twitter-white.png);
+}
 header.fixed .main-menu li.share .bdsharebuttonbox a.bds_twi,
 header .main-menu li.share .bdsharebuttonbox a.bds_twi:hover {
     background-image: url(img/twitter-grey.png);
@@ -313,6 +325,11 @@ header.fixed .main-menu li.share .bdsharebuttonbox a.bds_linkedin:hover {
     width: 20px;
     height: 20px;
     background-image: url(img/linkedin-green.png);
+}
+.index header .main-menu li.share .bdsharebuttonbox a.bds_linkedin {
+    width: 20px;
+    height: 20px;
+    background-image: url(img/linkedin-white.png);
 }
 header.fixed .main-menu li.share .bdsharebuttonbox a.bds_linkedin, 
 header .main-menu li.share .bdsharebuttonbox a.bds_linkedin:hover {
@@ -670,6 +687,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 #home .description p {
     margin-bottom: 30px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
 }
@@ -683,6 +701,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     line-height: 16px;
     color: #fff;
     border: 2px solid #fff;
+    text-transform: uppercase;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -731,7 +750,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     max-width: 1054px;
     margin: 0 auto 50px auto;
     padding: 0 15px;
-    text-align: left;
+    text-align: center;
 }
 #concept p:last-child {
     text-align: center;
@@ -1356,6 +1375,9 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 #contact .form-control {
     border: 2px solid #55EFCB;
 }
+#contact .form-control.error {
+    border: 2px solid #000;
+}
 #contact .btn-send {
     font-size: 15px;
     text-align: center;
@@ -1411,8 +1433,17 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 #contact .short .form-control {
     text-align: center;
 }
-
-
+#contact .resend span {
+    display: block;
+    margin-bottom: 20px;
+}
+#contact .resend button {
+    text-transform: uppercase;
+}
+#contact p.error {
+    color: #48caab;
+    margin: -60px 0 80px 0;
+}
 
 /* ---------------------------------------------- /*
  *  Footer Section

@@ -37,13 +37,13 @@
             <nav class="main-menu">
                 <img class="logo" src="css/img/logo.png" alt="">
                 <ul>
-                    <li><a data-scroll href="#home">Home</a>
-                    </li>
                     <li><a data-scroll href="#concept">Concept</a>
                     </li>
-                    <li><a data-scroll href="#supports">Supports</a>
+                    <li><a data-scroll href="#video">Vidéo</a>
                     </li>
-                    <li><a data-scroll href="#download">Download</a>
+                    <li><a data-scroll href="#supports">Presse</a>
+                    </li>
+                    <li><a data-scroll href="#download">Télécharger</a>
                     </li>
                     <li><a data-scroll href="#contact">Contact</a>
                     </li>
@@ -90,8 +90,8 @@
                             <strong>ET POURTANT VOUS AVEZ DES CHOSES À DIRE !</strong><br><br>
                             Avec GOV faites entendre votre voix.
                         </p>
-                        <a target="_blank" href="javascript:;">TÉLÉCHARGER</a>
-                        <a class="disabled" target="_blank" href="javascript:;">En savoir Plus</a>
+                        <a data-scroll href="#download">TÉLÉCHARGER</a>
+                        <a target="_blank" href="javascript:;">En savoir Plus</a>
                     </div>
                     <img class="phone-1" src="css/img/phone-1.png" alt="">
                 </div>
@@ -156,7 +156,7 @@
             <div class="inner">
                 <div class="description">
                     <h3>
-                        Découvrez des datas instantanés et représentatives
+                        Découvrez en temps réel la météo de l’opinion
                     </h3>
                     <ul>
                         <li>Unique ! Découvrez en temps réel la courbe de popularité des personnalités politiques par sexe, age, affinités politiques, département…</li>
@@ -172,7 +172,7 @@
             </div>
         </section>
 
-        <section class="fullVideo">
+        <section id="video" class="fullVideo">
             <video width="100%" height="100%" class="video-js vjs-default-skin" controls preload="none" poster="css/img/background-green.jpg" data-setup="{}">
                 <source src="http://content4.catalog.video.msn.com/e2/ds/6c61f3c3-28dc-4070-b64f-12a99bbed488.mp4" type='video/mp4' />
 
@@ -246,10 +246,13 @@
         <section id="contact" class="chapter">
             <div class="container">
                 <h3>Contactez-nous</h3>
+                <p class="error">
+                    Erreur : veuillez remplir correctement tous les champs du formulaire !
+                </p>
                 <form>
                     <div class="row">
                         <div class="col-sm-4">
-                            <label><input type="text" name="" placeholder="Votre Nom" class="form-control"></label>
+                            <label><input type="text" name="" placeholder="Votre Nom" class="form-control error"></label>
                         </div>
                         <div class="col-sm-4">
                             <label><input type="text" name="" placeholder="Votre Mail" class="form-control"></label>
@@ -263,10 +266,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <h5>Verification</h5>
-                            <p>Please enter any two digits<sup>*</sup></p>
+                            <h5>Vérification</h5>
+                            <p>Entrez deux chiffres<sup>*</sup></p>
                             <label class="short"><input type="text" name="" class="form-control"></label>
-                            <small>Example: 12</small>
+                            <small>Exemple: 12</small>
                         </div>
                     </div>
                     <div class="row">
@@ -275,6 +278,12 @@
                         </div>
                     </div>
                 </form>
+                <p class="resend">
+                    <span>
+                        Nous avons bien reçu votre message !
+                    </span>
+                    <button class="btn btn-send">envoyer du courrier de nouveau</button>
+                </p>
             </div>
         </section>
     </div>
@@ -294,9 +303,6 @@
                 <a href="javascript:;" class="col-md-3 col-sm-3 col-xs-3">
                     <img src="css/img/instagram.png" alt="">
                 </a>
-                <p class="col-md-12 col-sm-12 col-xs-12">
-                    © 2014 - Designed by Rémy Gendre - Fred&Farid - Mentions légales
-                </p>
             </div>
         </div>
     </footer>
