@@ -1593,8 +1593,19 @@ footer p {
     header {
         height: 65px;
     }
+    .index header.green {
+          background: url(img/header-bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+    }
     header.fixed {
         height: 65px;
+        background: #fff !important;
+        -moz-box-shadow: 0 0 3px rgba(0,0,0,0.3) !important;
+        -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3) !important;
+        -ms-box-shadow: 0 0 3px rgba(0,0,0,0.3) !important;
+        box-shadow: 0 0 3px rgba(0,0,0,0.3) !important;
     }
     header .inner {
         width: 100%;
@@ -1664,12 +1675,17 @@ footer p {
     }
     header .main-menu li > a:hover {
         border: none;
+        background: #fff;
+        color: #4ed7ab;
     }
     header.fixed .main-menu li > a:hover {
         border: none;
     }
     header .main-menu li.share > a {
         width: 100%;
+    }
+    header .main-menu li.share > a:hover {
+        background: #fff;
     }
     header .main-menu li.share > a:after {
         position: static;
@@ -1929,6 +1945,10 @@ footer p {
     #contact h3 {
         margin-bottom: 40px;
     }
+    #contact p.error {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
     #contact label {
         width: 70%;
         margin: 0 auto 15px auto; 
@@ -2042,7 +2062,7 @@ footer p {
         line-height: 14px;
     }
     #home .description a {
-        width: 100px;
+        width: 130px;
         font-size: 10px;
     }
     #home .phone-1 {
@@ -2087,7 +2107,7 @@ footer p {
         line-height: 14px;
     }
     #home .description a {
-        width: 100px;
+        width: 120px;
         margin: 0 0 15px 10% !important;
         padding: 10px 12px;
         font-size: 10px;

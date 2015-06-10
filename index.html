@@ -372,12 +372,30 @@
 
         //顶部菜单
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 540) {
-                $('header').addClass('fixed');
+            if($(window).width()>640) {
+                if ($(document).scrollTop() > 540) {
+                    $('header').addClass('fixed');
+                } 
+                else {
+                    $('header').removeClass('fixed');
+                }
+            }
+            else {
+                if ($(document).scrollTop() > 400) {
+                    $('header').addClass('fixed');
+                } 
+                else {
+                    $('header').removeClass('fixed');
+                }
+            }
+
+            if ($(document).scrollTop() > 40) {
+                $('header').addClass('green');
             } 
             else {
-                $('header').removeClass('fixed');
+                $('header').removeClass('green');
             }
+            
         });
 
         $(".menu-button").click(function() {
