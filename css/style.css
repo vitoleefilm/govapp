@@ -1980,6 +1980,9 @@ footer p {
         text-align: center;
         margin: 0 0 30px 10% !important;
     }
+    footer a img {
+        width: 45px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
