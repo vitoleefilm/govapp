@@ -1665,10 +1665,10 @@ footer p {
         padding: 0;
         font-size: 14px;
         border: none;
-        -moz-border-radius: none;
-        -webkit-border-radius: none;
-        -ms-border-radius: none;
-        border-radius: none;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
     }
     header.fixed .main-menu li > a {
         color: #fff;
