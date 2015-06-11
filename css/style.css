@@ -1185,7 +1185,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     text-align: center;
 }
 #owl-demo .item {
-    height: 427px;
+    min-height: 400px;
     margin-left: 15px;
     margin-right: 15px;
     border: 1px solid #E5E5E5;
