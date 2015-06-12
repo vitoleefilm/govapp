@@ -438,7 +438,7 @@ header .share-box h4 {
     font-size: 25px;
     line-height: 25px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 800;
 }
 header .share-box .bdsharebuttonbox {
     display: block;
@@ -511,7 +511,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     padding: 0;
     color: #000;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 800;
 }
 .content-title time {
     display: block;
@@ -581,7 +581,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 .chapter h3 {
     font-size: 45px;
     color: #000;
-    font-weight: 600;
+    font-weight: 800;
 }
 .chapter .inner {
     position: relative;
@@ -682,7 +682,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 #home .description h2 {
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 70px;
 }
 #home .description p {
