@@ -1,5 +1,19 @@
 @font-face {
     font-family: 'Open Sans';
+    src: url('opensans-light.eot');
+    src: local('Open Sans Light'), url('opensans-light.eot?#iefix') format('embedded-opentype'), url('opensans-light.woff') format('woff'), url('opensans-light.ttf') format('truetype'), url('opensans-light.svg#opensans-regular') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('opensans-lightitalic.eot');
+    src: local('Open Sans Light'), url('opensans-lightitalic.eot?#iefix') format('embedded-opentype'), url('opensans-lightitalic.woff') format('woff'), url('opensans-lightitalic.ttf') format('truetype'), url('opensans-lightitalic.svg#opensans-italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
     src: url('opensans-regular.eot');
     src: local('Open Sans'), url('opensans-regular.eot?#iefix') format('embedded-opentype'), url('opensans-regular.woff') format('woff'), url('opensans-regular.ttf') format('truetype'), url('opensans-regular.svg#opensans-regular') format('svg');
     font-weight: 400;
@@ -42,7 +56,7 @@
 }
 /*ie低版本*/
 
-@font-face {
+/*@font-face {
     font-family: 'OpenSansRegular';
     src: url('opensans-regular.eot');
     src: local('Open Sans'), url('opensans-regular.eot?#iefix') format('embedded-opentype'), url('opensans-regular.woff') format('woff'), url('opensans-regular.ttf') format('truetype'), url('opensans-regular.svg#opensans-regular') format('svg');
@@ -83,5 +97,5 @@
     src: local('Open Sans'), url('opensans-semibolditalic.eot?#iefix') format('embedded-opentype'), url('opensans-semibolditalic.woff') format('woff'), url('opensans-semibolditalic.ttf') format('truetype'), url('opensans-semibolditalic.svg#opensans-semibolditalic') format('svg');
     font-weight: bold;
     font-style: italic;
-}
+}*/
 

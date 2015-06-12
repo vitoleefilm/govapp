@@ -198,7 +198,7 @@ header .main-menu li > a {
     height: 45px;
     padding: 0 15px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     color: #fff;
     line-height: 43px;
     border: 1px solid transparent;
@@ -438,7 +438,7 @@ header .share-box h4 {
     font-size: 25px;
     line-height: 25px;
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
 }
 header .share-box .bdsharebuttonbox {
     display: block;
@@ -511,13 +511,13 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     padding: 0;
     color: #000;
     font-size: 45px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .content-title time {
     display: block;
     font-size: 24px;
     line-height: 48px;
-    font-weight: 400;
+    font-weight: 200;
 }
 .cmsPage {
     max-width: 1024px;
@@ -533,7 +533,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     font-size: 18px;
     line-height: 24px;
     color: #707070;
-    font-weight: 400;
+    font-weight: 200;
 }
 .cmsMainBox img {
     display: block;
@@ -544,7 +544,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 .cmsMainBox a {
     color: #707070;
-    font-weight: 400;
+    font-weight: 200;
     text-decoration: underline;
 }
 .cmsMainBox .youku {
@@ -581,7 +581,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 .chapter h3 {
     font-size: 45px;
     color: #000;
-    font-weight: 800;
+    font-weight: 600;
 }
 .chapter .inner {
     position: relative;
@@ -592,6 +592,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 .chapter p, .chapter li {
     font-size: 16px;
     line-height: 30px;
+    font-weight: 200;
     color: rgb(112, 112, 112);
 }
 .chapter li {
@@ -682,17 +683,17 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 #home .description h2 {
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 70px;
 }
 #home .description p {
     margin-bottom: 30px;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 18px;
     line-height: 30px;
 }
 #home .description p strong {
-    font-weight: 600;
+    font-weight: 400;
 }
 #home .description a {
     display: inline-block;
@@ -1420,7 +1421,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     margin-bottom: 15px;
     text-align: center;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 200;
 }
 #contact p {
     margin-bottom: 10px;
@@ -1428,7 +1429,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 #contact p sup {
     color: #bc1212;
-    font-weight: 400;
+    font-weight: 200;
 }
 #contact small {
     display: block;
