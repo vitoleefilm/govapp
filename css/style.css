@@ -39,7 +39,9 @@ button {
 body {
     font: normal 12px/1.5 'Open Sans', '微软雅黑', sans-serif;
 }
-
+body.lock {
+    overflow: hidden;
+}
 /* ---------------------------------------------- /*
  *  Header
 /* ---------------------------------------------- */
@@ -1476,6 +1478,7 @@ footer a {
 footer a img {
     display: block;
     width: 60%;
+    max-width: 108px;
     height: auto;
     margin: 0 auto;
 }
@@ -1993,6 +1996,9 @@ footer p {
     }
     footer a img {
         width: 45px;
+    }
+    footer {
+        padding: 40px 0;
     }
 }
 

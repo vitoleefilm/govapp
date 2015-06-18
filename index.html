@@ -401,11 +401,13 @@
         $(".menu-button").click(function() {
             $(".main-menu").addClass("show");
             $(".header-mask").addClass("show");
+            $("body").addClass("lock");
         });
 
         $(".header-mask").click(function() {
             $(this).removeClass("show");
             $(".main-menu").removeClass("show");
+            $("body").removeClass("lock");
         });
 
         $(".main-menu .share").click(function() {
