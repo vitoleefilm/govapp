@@ -39,9 +39,6 @@ button {
 body {
     font: normal 12px/1.5 'Open Sans', '微软雅黑', sans-serif;
 }
-body.lock {
-    overflow: hidden;
-}
 /* ---------------------------------------------- /*
  *  Header
 /* ---------------------------------------------- */
@@ -1697,6 +1694,7 @@ footer p {
     }
     header .main-menu li.share > a {
         width: 100%;
+        text-align: center;
     }
     header .main-menu li.share > a:hover {
         background: #fff;
@@ -1705,6 +1703,7 @@ footer p {
         position: static;
         width: 25px;
         height: 22px;
+        vertical-align: middle;
     }
     header.fixed .main-menu li.share > a:after {
         background-image: url(img/share.png);
@@ -1757,6 +1756,9 @@ footer p {
     }
     #download a img {
         height: 50px;
+    }
+    #contact .btn-send {
+        padding: 15px 10px;
     }
 }
 
@@ -1994,8 +1996,15 @@ footer p {
         text-align: center;
         margin: 0 0 30px 10% !important;
     }
+    footer a {
+        margin-bottom: 0;
+    }
+    footer .row {
+        margin: 0;
+        padding: 0;
+    }
     footer a img {
-        width: 45px;
+        width: 30px;
     }
     footer {
         padding: 40px 0;

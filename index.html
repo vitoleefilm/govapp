@@ -330,7 +330,7 @@
 
             if (ww < 769) {
                 $("header .main-menu").css({
-                    height: wh
+                    height: wh + 100
                 });
                 $("header .main-menu li, header .main-menu li > a").css({
                     height: (wh - 100) / 6,
@@ -401,13 +401,13 @@
         $(".menu-button").click(function() {
             $(".main-menu").addClass("show");
             $(".header-mask").addClass("show");
-            $("body").addClass("lock");
+            document.ontouchmove = function(e){e.preventDefault();}
         });
 
         $(".header-mask").click(function() {
             $(this).removeClass("show");
             $(".main-menu").removeClass("show");
-            $("body").removeClass("lock");
+            document.ontouchmove = function(e){return true;}
         });
 
         $(".main-menu .share").click(function() {
