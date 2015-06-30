@@ -1469,6 +1469,7 @@ footer .container-fluid {
 }
 footer a {
     display: block;
+    margin-bottom: 40px;
     text-align: center;
 }
 footer a img {
@@ -1482,7 +1483,97 @@ footer p {
     text-align: center;
     color: #fff;
     font-size: 12px;
+    cursor: pointer;
 }
+
+/* ---------------------------------------------- /*
+ *  T&C
+/* ---------------------------------------------- */
+.tc {
+    display: block;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    padding: 60px 50px;
+    background: #fff;
+    border: 4px solid #33a58c;
+    z-index: 9900;
+    box-sizing: border-box;
+}
+.tc h4 {
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.tc .close {
+    display: block;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    right: 30px;
+    top: 30px;
+    opacity: 1;
+    background: url(img/close.jpg);
+}
+.tc .inner {
+    display: block;
+    position: relative;
+    color: #727272;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; 
+}
+.tc .inner::-webkit-scrollbar {
+    width: 13px;
+    height: 4px;
+    background: #fff;
+}
+.tc .inner::-webkit-scrollbar-thumb {
+    background: #66e3ab;
+}
+.tc .inner::-webkit-scrollbar-thumb:hover {
+    background: #66e3ab;
+}
+.tc .inner::-webkit-scrollbar-thumb:active {
+    background: #66e3ab;
+}
+.tc h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+.tc h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+.tc p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 28px;
+}
+.tc ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.tc ul li:before {
+    content: "•";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 
 /* ---------------------------------------------- /*
  * FOR RESPONSIVNESS
@@ -1759,6 +1850,42 @@ footer p {
     #contact .btn-send {
         padding: 15px 10px;
     }
+    .tc .inner::-webkit-scrollbar {
+        width: 6px;
+    }
+    .tc h4 {
+        padding: 0 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .tc {
+        padding: 30px 25px;
+        border: 2px solid #33a58c;
+    }
+    .tc .close {
+        right: 0;
+        top: 0;
+        background-size: 28px 28px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .tc h5 {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .tc h6 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .tc p {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .tc ul li {
+        margin-bottom: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1996,7 +2123,7 @@ footer p {
         margin: 0 0 30px 10% !important;
     }
     footer a {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     footer .row {
         margin: 0;
@@ -2007,6 +2134,9 @@ footer p {
     }
     footer {
         padding: 40px 0;
+    }
+    footer p {
+        font-size: 10px;
     }
 }
 
