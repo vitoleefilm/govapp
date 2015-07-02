@@ -37,7 +37,7 @@ button {
     appearance: none;
 }
 body {
-    font: normal 12px/1.5 'Open Sans', '微软雅黑', sans-serif;
+    font: normal 12px/1.5 'Open Sans', sans-serif;
 }
 /* ---------------------------------------------- /*
  *  Header
@@ -72,7 +72,7 @@ header .inner {
     padding: 0 50px;
     box-sizing: content-box;
 }
-header h1 {
+header h3 {
     position: absolute;
     left: 50px;
     top: 50%;
@@ -84,12 +84,12 @@ header h1 {
     -ms-transition: all .3s ease-out;
     transition: all .3s ease-out;
 }
-header.fixed h1 {
+header.fixed h3 {
     width: 96px;
     height: 50px;
     margin-top: -25px;
 }
-header h1 a, header .inner h1 a img {
+header h3 a, header .inner h3 a img {
     display: block;
     width: 100%;
     height: 100%;
@@ -197,11 +197,11 @@ header .main-menu li > a {
     height: 45px;
     padding: 0 15px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 200;
     color: #fff;
     line-height: 43px;
     border: 1px solid transparent;
-    text-transform: uppercase;
+    text-transform: capitalize;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -451,7 +451,7 @@ header .share-box .bdsharebuttonbox a {
     position: relative;
     float: none;
     width: 33.333333333%;
-    height: 50px;
+    height: 60px;
     margin: 0 0 50px 0;
     padding: 0;
     background: none;
@@ -460,12 +460,12 @@ header .share-box .bdsharebuttonbox a:after {
     content: "";
     display: block;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     top: 0;
     left: 50%;
-    margin-left: -25px;
-    background-size: 50px 50px;
+    margin-left: -30px;
+    background-size: 60px 60px;
 }
 header .share-box .bdsharebuttonbox a.bds_fbook:after {
     background-image: url(img/facebook.png);
@@ -577,7 +577,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 .chapter {
     overflow: hidden;
 }
-.chapter h3 {
+.chapter h2 {
     font-size: 45px;
     color: #000;
     font-weight: 600;
@@ -589,6 +589,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     margin: 0 auto;
 }
 .chapter p, .chapter li {
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 30px;
     font-weight: 200;
@@ -680,7 +681,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     -ms-transform: translateX(0);
     transform: translateX(0);
 }
-#home .description h2 {
+#home .description h1 {
     font-size: 45px;
     font-weight: 400;
     line-height: 70px;
@@ -701,7 +702,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     line-height: 16px;
     color: #fff;
     border: 2px solid #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -743,7 +744,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     padding: 140px 0;
     text-align: center;
 }
-#concept h3 {
+#concept h2 {
     margin-bottom: 30px;
 }
 #concept p {
@@ -793,12 +794,12 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     top: 130px;
     left: 48%;
 }
-#opinion h3 {
+#opinion h2 {
     position: relative;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
-#opinion h3:after {
+#opinion h2:after {
     content: "";
     display: block;
     position: absolute;
@@ -890,12 +891,12 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     right: 48%;
     text-align: right;
 }
-#debats h3 {
+#debats h2 {
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-#debats h3:after {
+#debats h2:after {
     content: "";
     display: block;
     position: absolute;
@@ -1031,12 +1032,12 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     left: 48%;
     padding-right: 30px;
 }
-#data h3 {
+#data h2 {
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-#data h3:after {
+#data h2:after {
     content: "";
     display: block;
     position: absolute;
@@ -1180,7 +1181,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 #supports {
     padding-bottom: 80px;
 }
-#supports h3 {
+#supports h2 {
     padding: 60px 0 40px 0;
     text-align: center;
 }
@@ -1238,19 +1239,36 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 }
 .item .img {
     width: 100%;
-    height: 150px;
+    height: auto;
     margin-bottom: 40px;
     border-radius: 5px 5px 0 0;
 }
 .item h4 {
-    margin-bottom: 25px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
     text-align: left;
     font-weight: 600;
     color: black;
 }
+.item h4:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
+    background: -webkit-linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
+    background: -ms-linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
+    background: linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
+}
 .item p {
     margin-bottom: 40px;
     text-align: left;
+    font-size: 12px;
+    line-height: 20px;
 }
 .item a {
     display: block;
@@ -1258,7 +1276,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     width: 31px;
     height: 31px;
     left: 10px;
-    bottom: 10px;
+    bottom: 20px;
 }
 .small-line-green {
     background: #56EFC6;
@@ -1315,7 +1333,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     background-image: url(img/background-green.jpg);
     background-size: 100% 100%;
 }
-#download h3 {
+#download h2 {
     position: absolute;
     width: 100%;
     left: 0;
@@ -1373,7 +1391,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 #contact {
     padding: 80px 0;
 }
-#contact h3 {
+#contact h2 {
     margin-bottom: 80px;
     text-align: center;
 }
@@ -1383,7 +1401,15 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     margin-bottom: 30px;
 }
 #contact .form-control {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
     border: 2px solid #55EFCB;
+}
+#contact input[type=text].form-control, 
+#contact input[type=email].form-control {
+    height: 50px;
 }
 #contact .form-control.error {
     border: 2px solid #000;
@@ -1478,6 +1504,16 @@ footer a img {
     max-width: 108px;
     height: auto;
     margin: 0 auto;
+    -moz-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+footer a:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 footer p {
     text-align: center;
@@ -1618,12 +1654,12 @@ footer p {
 
 @media only screen and (max-width: 990px) {
 
-    header h1 {
+    header h3 {
         width: 96px;
         height: 50px;
         margin-top: -25px;
     }
-    header.fixed h1 {
+    header.fixed h3 {
         width: 96px;
         height: 50px;
         margin-top: -25px;
@@ -1651,7 +1687,7 @@ footer p {
     #home .description {
         left: 50px;
     }
-    #home .description h2 {
+    #home .description h1 {
         font-size: 36px;
         line-height: 60px;
     }
@@ -1668,7 +1704,7 @@ footer p {
 /* Medium devices (desktops, 990px and up) */
 
 @media only screen and (max-width: 880px) {
-    .chapter h3 {
+    .chapter h2 {
         font-size: 40px;
     }
     #concept p {
@@ -1747,14 +1783,14 @@ footer p {
         height: 65px;
         padding: 0;
     }
-    header h1 {
+    header h3 {
         position: static;
         width: 60px;
         height: 45px;
         margin: 0 auto;
         padding-top: 14px;
     }
-    header.fixed h1 {
+    header.fixed h3 {
         width: 60px;
         height: 45px;
         margin: 0 auto;
@@ -1863,7 +1899,7 @@ footer p {
     #home .description {
         left: 20px;
     }
-    #home .description h2 {
+    #home .description h1 {
         font-size: 35px;
         line-height: 50px;
     }
@@ -1929,7 +1965,7 @@ footer p {
     #concept {
         padding: 40px 0;
     }
-    .chapter h3 {
+    .chapter h2 {
         font-size: 28px;
     }
     #concept p span {
@@ -1944,7 +1980,7 @@ footer p {
         top: 0;
         z-index: 100;
     }
-    #opinion .description h3 {
+    #opinion .description h2 {
         margin-bottom: 250px;
         padding: 40px 15px 20px 15px;
         background: #fafafa;
@@ -1996,7 +2032,7 @@ footer p {
         z-index: 100;
         text-align: left;
     }
-    #debats .description h3 {
+    #debats .description h2 {
         margin-bottom: 300px;
         padding: 40px 15px 20px 15px;
         background: #fff;
@@ -2008,7 +2044,7 @@ footer p {
     #debats .description ul {
         position: relative;
         padding: 40px 15px 40px 15px;
-        background: #fafafa;
+        background: #fff;
     }
     #debats .description ul li {
         padding: 0 0 0 25px;
@@ -2059,13 +2095,13 @@ footer p {
         z-index: 100;
         text-align: left;
     }
-    #data .description h3 {
+    #data .description h2 {
         margin-bottom: 300px;
         padding: 40px 15px 20px 15px;
         background: #fafafa;
         box-sizing: content-box;
     }
-    #data .description h3:after {
+    #data .description h2:after {
         display: none;
     }
     #data .description ul {
@@ -2117,7 +2153,7 @@ footer p {
         top: auto;
         bottom: 42%;
     }
-    #contact h3 {
+    #contact h2 {
         margin-bottom: 40px;
     }
     #contact p.error {
@@ -2174,7 +2210,7 @@ footer p {
 }
 
 @media only screen and (max-width: 500px) {
-    #home .description h2 {
+    #home .description h1 {
         font-size: 35px;
         line-height: 65px;
     }
@@ -2190,7 +2226,7 @@ footer p {
 }
 
 @media only screen and (max-width: 480px) {
-    #home .description h2 {
+    #home .description h1 {
         font-size: 30px;
         line-height: 45px;
     }
@@ -2243,7 +2279,7 @@ footer p {
     #home {
         height: 500px;
     }
-    #home .description h2 {
+    #home .description h1 {
         font-size: 30px;
         line-height: 50px;
     }
@@ -2288,13 +2324,13 @@ footer p {
     #home {
         height: 450px;
     }
-    #home .description h2 {
+    #home .description h1 {
         font-size: 24px;
         line-height: 38px;
     }
     #home .description p {
         margin-bottom: 50px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 14px;
     }
     #home .description a {
@@ -2308,7 +2344,7 @@ footer p {
         right: 5%;
         bottom: -20px;
     }
-    #data .description h3 {
+    #data .description h2 {
         margin-bottom: 200px;
     }
     #data .phone-wrap {
