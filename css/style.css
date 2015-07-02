@@ -1498,11 +1498,39 @@ footer p {
     top: 10%;
     padding: 60px 50px;
     background: #fff;
-    border: 4px solid #33a58c;
     z-index: 9900;
     box-sizing: border-box;
 }
+.tc:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to right, rgba(85,239,203,1) 0%, rgba(85,239,203,0.9) 26%, rgba(85,239,203,0.87) 33%, rgba(95,237,179,0.75) 63%, rgba(95,237,178,0.75) 64%, rgba(100,238,174,0.75) 85%);
+}
+.tc:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: -moz-calc(100% - 2px);
+    width: -webkit-calc(100% - 2px);
+    width: -ms-calc(100% - 2px);
+    width: calc(100% - 2px);
+    height: -moz-calc(100% - 2px);
+    height: -webkit-calc(100% - 2px);
+    height: -ms-calc(100% - 2px);
+    height: calc(100% - 2px);
+    left: 1px;
+    top: 1px;
+    z-index: 20;
+    background: #fff;
+}
 .tc h4 {
+    position: relative;
     width: 100%;
     padding: 0 50px;
     margin-bottom: 20px;
@@ -1510,6 +1538,7 @@ footer p {
     font-weight: 800;
     line-height: 60px;
     text-align: center;
+    z-index: 100;
     box-sizing: border-box;
 }
 .tc .close {
@@ -1520,7 +1549,11 @@ footer p {
     right: 30px;
     top: 30px;
     opacity: 1;
-    background: url(img/close.jpg);
+    z-index: 100;
+    background-image: url(img/close.png);
+    background-size: 54px 55px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .tc .inner {
     display: block;
@@ -1528,6 +1561,7 @@ footer p {
     color: #727272;
     overflow-x: hidden;
     overflow-y: scroll;
+    z-index: 100;
     -webkit-overflow-scrolling: touch; 
 }
 .tc .inner::-webkit-scrollbar {
@@ -1860,12 +1894,11 @@ footer p {
     }
     .tc {
         padding: 30px 25px;
-        border: 2px solid #33a58c;
     }
     .tc .close {
         right: 0;
         top: 0;
-        background-size: 28px 28px;
+        background-size: 27px 27.5px;
         background-position: center;
         background-repeat: no-repeat;
     }
