@@ -1986,7 +1986,7 @@ footer p {
         background: #fafafa;
         box-sizing: content-box;
     }
-    #opinion .description h3:after {
+    #opinion .description h2:after {
         display: none;
     }
     #opinion .description ul {
@@ -2038,7 +2038,7 @@ footer p {
         background: #fff;
         box-sizing: content-box;
     }
-    #debats .description h3:after {
+    #debats .description h2:after {
         display: none;
     }
     #debats .description ul {
