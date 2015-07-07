@@ -1486,7 +1486,8 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
 /* ---------------------------------------------- */
 
 footer {
-    background: url('img/background-green.jpg');
+    background-image: url('img/background-green.jpg');
+    background-size: 100% 100%;
     padding: 70px 0;
 }
 footer .container-fluid {
@@ -1836,6 +1837,7 @@ footer p {
         padding: 0;
         font-size: 14px;
         border: none;
+        text-transform: uppercase;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         -ms-border-radius: 0;
@@ -2349,6 +2351,14 @@ footer p {
     }
     #data .phone-wrap {
         bottom: 40%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #home .phone-1 {
+        width: 80px;
+        right: 5%;
+        bottom: -20px;
     }
 }
 
