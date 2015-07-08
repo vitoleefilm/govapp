@@ -702,7 +702,6 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     line-height: 16px;
     color: #fff;
     border: 2px solid #fff;
-    text-transform: capitalize;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -1408,6 +1407,9 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     background: -webkit-linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
     background: -ms-linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
     background: linear-gradient(to right, #55EFCB 0%, rgba(85, 239, 203, 0.9) 26%, rgba(85, 239, 203, 0.87) 33%, rgba(95, 237, 179, 0.75) 63%, rgba(95, 237, 178, 0.75) 64%, rgba(100, 238, 174, 0.75) 85%) repeat scroll 0% 0% transparent;
+}
+#contact .text-center label {
+    background: none;
 }
 #contact .form-control {
     padding: 15px 20px;
