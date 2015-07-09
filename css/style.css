@@ -545,6 +545,7 @@ header .share-box .bdsharebuttonbox a.bds_tsina:after {
     color: #707070;
     font-weight: 200;
     text-decoration: underline;
+    word-wrap: break-word;
 }
 .cmsMainBox .youku {
     display: block;
@@ -1854,7 +1855,7 @@ footer p {
         padding: 0;
         font-size: 14px;
         border: none;
-        text-transform: uppercase;
+        text-transform: capitalize;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         -ms-border-radius: 0;
